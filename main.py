@@ -1224,6 +1224,7 @@ async def do_commit(body):
     put_commit_wire(eval_id, {"receipts": receipts, "outcomes": outcomes})
     return response
 
+@router.post("/")
 @router.post("/v1/mailroom/actions")
 @router.post("/q9/mailroom")
 @router.post("/mailroom")
